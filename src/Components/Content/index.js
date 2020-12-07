@@ -10,7 +10,7 @@ const Content = () => {
   return (
 
 <Paper>
-      <div style={{marginTop:'10px'}}>
+      <div style={{}}>
         <Portefolio />
       </div>
     </Paper>

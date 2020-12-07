@@ -12,18 +12,18 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const portefolio = () => {
   return (
-    <Paper elevation={3}  className={styles.Portefolio}>
+    
+    <Card elevation={3} variant='elevation' classes={styles.Portefolio} >
       <Typography variant='h5'>Projects</Typography>
-      <Grid container spacing={3}>
-
+      <Grid container spacing={3} className={{margin: '10px 10px 10px 10px'}}>
         <Grid item xs={3}>
-          <Card>
+          <Card classes={{overflow: 'visible'}}>
             <CardMedia>
               <GitHubIcon />
             </CardMedia>
             <CardContent>
               <Typography gutterBottom variant='h5' component='h2'>
-                automated roaster
+                automated roaster for shared house
               </Typography>
               <Typography>(mobile android Java)</Typography>
             </CardContent>
@@ -35,7 +35,7 @@ const portefolio = () => {
         </Grid>
 
         <Grid item xs={3}>
-        <Card>
+        <Card  classes={{overflow: 'visible'}}>
             <CardMedia>
               <GitHubIcon />
             </CardMedia>
@@ -53,7 +53,7 @@ const portefolio = () => {
         </Grid>
 
         <Grid item xs={3}>
-        <Card>
+        <Card  classes={{overflow: 'visible'}}>
             <CardMedia>
               <GitHubIcon />
             </CardMedia>
@@ -70,7 +70,8 @@ const portefolio = () => {
           </Card>
         </Grid>
       </Grid>
-    </Paper>
+    </Card>
+
   );
 };
 

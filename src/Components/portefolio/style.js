@@ -1,11 +1,15 @@
 export const styles = {
-    Portefolio: {
-      display: 'flex',
-      marginTop:'30 px',
-    //   width: '100%',
-      padding: '10 px',
-      justifyContent:'center',
-      alignitems:'baseline',
-      // backgroundColor: 'blue',
-    },
-  };
+  Portefolio: {
+    height: 'fit-content',
+    display: 'flex',
+    overflow: 'visible',
+    justifyContent: 'space-between',
+    margin: ' 10px',
+    padding: ' 10px',
+  },
+
+  containerPortfolio: {
+    marginBottom: '10px',
+    padding: '5px',
+  },
+};
