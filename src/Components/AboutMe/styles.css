@@ -1,0 +1,26 @@
+.aboutMeContainer {
+  width: 100%;
+  display: inline-block;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutMeNameTitle {
+  line-height: 18px;
+  padding: 20px;
+}
+
+.aboutMeNameTitle .name {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+}
+.aboutMeNameTitle .title{
+color: #777;
+font-size: 13px;
+}
+
+/* .aboutmeIMG{}
+
+.timelineAboutme{} */
