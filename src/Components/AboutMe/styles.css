@@ -2,7 +2,7 @@
   width: 100%;
   display: inline-block;
   background-color: white;
-  border-radius: 6px;
+  border-radius: 10px;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -16,11 +16,23 @@
   font-size: 17px;
   font-weight: bold;
 }
-.aboutMeNameTitle .title{
-color: #777;
-font-size: 13px;
+.aboutMeNameTitle .title {
+  color: #777;
+  font-size: 13px;
 }
 
-/* .aboutmeIMG{}
+.aboutmeIMG {
+  margin-top: -40px;
+  -webkit-clip-path: polygon(0 9%, 100 0%, 100% 94%, 0% 100%);
+  clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+}
+
+.aboutmeIMG img {
+  width: 100%;
+  /*black and white*/
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+/* 
 
 .timelineAboutme{} */

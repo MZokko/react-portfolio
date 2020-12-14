@@ -9,6 +9,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import './styles.css';
+import imgProfile from '../../assets/images/displayImg.jpg';
 import AboutMeSlot from './AboutMeSlot';
 
 const useStyles = makeStyles((theme) => ({
@@ -30,7 +31,7 @@ const AboutMe = () => {
         </div>
 
         <figure className='aboutmeIMG'>
-          <img src={require('../../assets/images/23561676_1974817282731582_1689101379729377291_n.jpg')} alt='img' />
+          <img src={imgProfile} alt='img' />
         </figure>
         <div className='timelineAboutme'>
           timeline <br />
@@ -38,7 +39,7 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <Card>
+      {/* <Card>
         <div className='aboutMeNameTitle'>
           <AboutMeSlot
             text={'Alexandre Moradel'}
@@ -60,7 +61,7 @@ const AboutMe = () => {
           text={'https://www.linkedin.com/in/alexandre-moradel-2310701b3/'}
           icon={<LinkedInIcon />}
         />
-      </Card>
+      </Card> */}
     </div>
   );
 };
