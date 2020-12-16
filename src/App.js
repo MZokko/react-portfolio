@@ -11,10 +11,10 @@ import './App.css';
 
 function App() {
   return (
-    <Container>
+    <Container className="containerMain">
       <Grid container>
 
-        <Grid item xs={12} sm={12} md={4} lg={3}>
+        <Grid item xs={12} sm={12} md={4} lg={3} spacing={7}>
           <AboutMe />
         </Grid>{/*item end*/}
 

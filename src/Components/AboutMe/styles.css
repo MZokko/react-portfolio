@@ -33,6 +33,37 @@
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
-/* 
 
-.timelineAboutme{} */
+/* timeline About Me */
+
+.timelineAboutme {
+  top: 0;
+  left: 0;
+  margin: -40px 10px 30px;
+}
+
+.timelineAboutme .timelineContent {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.timelineText {
+  font-size: 13.5px !important;
+  color: #787878;
+  font-weight: 400;
+}
+.timelineText > a {
+  text-decoration: none;
+}
+
+.timelineText > span {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+.aboutMeContainer .btnDlCvContainer {
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  margin-top: 15px;
+}

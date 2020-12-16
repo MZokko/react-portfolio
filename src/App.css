@@ -1,3 +1,7 @@
+:root{
+  --main-color:#a200ff;
+}
+
 .App {
   display: flex;
   justify-content: space-between;
@@ -6,10 +10,17 @@
   width: 100%;
 }
 
+.containerMain{
+  margin-top: 60px;
+}
+
 @media only screen and (max-width: 800px) {
   .App {
     display: flex;
     flex-direction: column;
 
+  }
+  .containerMain{
+    margin-top: 30px;
   }
 }

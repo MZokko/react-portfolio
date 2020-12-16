@@ -1,67 +1,81 @@
 import React from 'react';
-import Card from '@material-ui/core/Card';
-import Avatar from '@material-ui/core/Avatar';
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
 
-import AddLocationIcon from '@material-ui/icons/AddLocation';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Card from '@material-ui/core/Card';
+import { Typography } from '@material-ui/core';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+import GetAppIcon from '@material-ui/icons/GetApp';
+
+import CustomeTimeline, {
+  CustomeTimelineSeparator,
+} from '../Timeline/CustomeTimeline';
 
 import './styles.css';
 import imgProfile from '../../assets/images/displayImg.jpg';
-import AboutMeSlot from './AboutMeSlot';
+import resumeData from '../../utils/resumeData';
+import MyButton from '../Button/MyButton';
 
-const useStyles = makeStyles((theme) => ({
-  large: {
-    width: theme.spacing(7),
-    height: theme.spacing(7),
-  },
-}));
+const CustomTimelineItem = (props) => {
+  return (
+    <TimelineItem>
+      <CustomeTimelineSeparator />
+      <TimelineContent className='timelineContent'>
+        {props.link ? (
+          <Typography className='timelineText'>
+            <span>{props.title}:</span>
+            <a href={props.link} target='_blank'>
+              {props.text}
+            </a>
+          </Typography>
+        ) : (
+          <Typography className='timelineText'>
+            <span>{props.title}:</span>
+            {props.text}
+          </Typography>
+        )}
+      </TimelineContent>
+    </TimelineItem>
+  );
+};
 
 const AboutMe = () => {
-  const classes = useStyles();
   return (
     <div>
+      <Card>
+        <div className='aboutMeContainer'>
+          <div className='aboutMeNameTitle'>
+            <Typography className='name'>{resumeData.name}</Typography>
+            <Typography className='title'>{resumeData.title}</Typography>
+          </div>
 
-      <div className='aboutMeContainer'>
-        <div className='aboutMeNameTitle'>
-          <Typography className='name'>name</Typography>
-          <Typography className='title'>title</Typography>
-        </div>
+          <figure className='aboutmeIMG'>
+            <img src={imgProfile} alt='img' />
+          </figure>
+          <div className='timelineAboutme'>
+            <CustomeTimeline icon={<PersonOutlineIcon />}>
+              <CustomTimelineItem title={'Email'} text={resumeData.email} />
+              <CustomTimelineItem
+                title={'Location'}
+                text={resumeData.location}
+              />
 
-        <figure className='aboutmeIMG'>
-          <img src={imgProfile} alt='img' />
-        </figure>
-        <div className='timelineAboutme'>
-          timeline <br />
-          <button>my btn</button>
+              {/* map thru social array of resumeData for the social item of the timeline */}
+              {Object.keys(resumeData.social).map((key) => (
+                <CustomTimelineItem
+                  key={key}
+                  title={key}
+                  text={resumeData.social[key].text}
+                  link={resumeData.social[key].link}
+                />
+              ))}
+            </CustomeTimeline>
+            <div className='btnDlCvContainer'>
+              <MyButton text={'Download Cv'} icon={<GetAppIcon />}></MyButton>
+            </div>
+          </div>
         </div>
-      </div>
-
-      {/* <Card>
-        <div className='aboutMeNameTitle'>
-          <AboutMeSlot
-            text={'Alexandre Moradel'}
-            style={{
-              textTransform: 'uppercase',
-              fontSize: '17px',
-              fontWeight: 'bold',
-            }}
-          />
-          <AboutMeSlot text={'sofware developper'} />
-        </div>
-        <Avatar alt='Alex' src='./public/alex.jpg' className={classes.large} />
-        <AboutMeSlot
-          text={'Location : Sydney Australia'}
-          icon={<AddLocationIcon />}
-        />
-        <AboutMeSlot text={'https://github.com/MZokko'} icon={<GitHubIcon />} />
-        <AboutMeSlot
-          text={'https://www.linkedin.com/in/alexandre-moradel-2310701b3/'}
-          icon={<LinkedInIcon />}
-        />
-      </Card> */}
+      </Card>
     </div>
   );
 };

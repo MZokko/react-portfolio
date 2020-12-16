@@ -1,0 +1,51 @@
+.timeline {
+  padding: 0px;
+}
+/* header */
+
+.timeline .timelineTitleHeader {
+  padding-top: 7px;
+}
+
+.timeline .timelineFirstItem {
+  min-height: 80px !important;
+}
+.timeline .MuiTimelineItem-root {
+  min-height: 0px;
+}
+
+.timeline .MuiTimelineItem-missingOppositeContent:before {
+  display: none; /* get rid of hiddin item on the left */
+}
+
+.timeline .timelineDotHeader {
+  color: rgb(0, 0, 0);
+  background-color: var(--main-color);
+  font-size: small;
+  padding: 10px;
+}
+
+/* timeline items */
+.timeline .timelineDotItem {
+  color: rgb(0, 0, 0);
+  border-color: var(--main-color);
+  padding: 2px;
+}
+.timeline .separatorItem {
+  padding-left: 18px;
+}
+
+.timeline .MuiTimelineConnector-root {
+  color: #eee;
+}
+
+.timeline .timelineDotHeader > .MuiSvgIcon-root {
+  font-size: 20px;
+  color: darkslategrey;
+}
+
+/* children */
+.timeline .timelineContent {
+  padding-top: 0px;
+  margin-bottom: 20px;
+}
