@@ -1,16 +1,78 @@
-
 import React from 'react';
-
+import { Typography, Grid } from '@material-ui/core';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import WorkIcon from '@material-ui/icons/Work';
+import SchoolIcon from '@material-ui/icons/School';
 import EducationTraning from './EducationTraning/educationTraning';
 import ProfessionalExp from './ProfessionalExp/professionalExp';
+import resumeData from '../../utils/resumeData';
+import CustomeTimeline, {
+  CustomeTimelineSeparator,
+} from '../Timeline/CustomeTimeline';
+import './index.css';
 
 const resume = () => {
   return (
     <div>
-    <EducationTraning/>
+      
+      {/* education and Experience */}
+      <Grid>
+        <Grid item className='section_title mb_30'>
+          <span></span>
+          <h6 className='section_title_text'>Resume</h6>
+        </Grid>
 
-    <ProfessionalExp/>
-    
+        <Grid item xs={12}>
+          <Grid container className='profExpTimeLine'>
+            {/* professional Experience */}
+            <Grid item xs={12} md={6}>
+              <CustomeTimeline
+                icon={<WorkIcon />}
+                title={'Professional Experience'}
+                
+              >
+                {resumeData.professionalExperience.map((exp) => {
+                  return (
+                    
+                    <TimelineItem key={exp.title}>
+                      <CustomeTimelineSeparator />
+
+                      <TimelineContent className='timelineContent'>
+                        <Typography className='timelineTitle'>{exp.title}</Typography>
+                        <Typography variant="caption" className='timelineDate'>{exp.date}</Typography>
+                        <Typography variant="body2" className='timelineDesc'>{exp.description}</Typography>
+                      </TimelineContent>
+        
+                    </TimelineItem>
+                 
+                  );
+                })}
+              </CustomeTimeline>
+            </Grid>
+            {/* Educational Training */}
+            <Grid item xs={12} md={6}>
+              <CustomeTimeline
+                icon={<SchoolIcon />}
+                title={'Education and training'}
+              />
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      {/* Services */}
+      <Grid></Grid>
+
+      {/* Skills */}
+      <Grid></Grid>
+
+      {/* Contact */}
+      <Grid></Grid>
+
+      <EducationTraning />
+
+      <ProfessionalExp />
     </div>
   );
 };

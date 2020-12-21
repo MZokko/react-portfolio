@@ -1,0 +1,14 @@
+.profExpTimeLine .timelineContent .timelineTitle {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+.profExpTimeLine .timelineContent.timelineDate {
+    color: darkslategrey;
+}
+
+.profExpTimeLine .timelineContent .timelineDesc {
+    color: gray;
+    font-size: small;
+    margin-top: 6px;
+}

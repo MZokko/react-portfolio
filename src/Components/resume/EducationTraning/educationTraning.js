@@ -11,7 +11,7 @@ import { Card, Paper } from '@material-ui/core';
 
 const educationTraning = () => {
   return (
-    <Paper>
+    <div>
       <Typography variant='h5'>Education and Trainning</Typography>
       <Timeline align='alternate'>
         {/* item */}
@@ -130,7 +130,7 @@ const educationTraning = () => {
           </TimelineContent>
         </TimelineItem>
       </Timeline>
-    </Paper>
+    </div>
   );
 };
 
