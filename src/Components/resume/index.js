@@ -4,8 +4,6 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
-import EducationTraning from './EducationTraning/educationTraning';
-import ProfessionalExp from './ProfessionalExp/professionalExp';
 import resumeData from '../../utils/resumeData';
 import CustomeTimeline, {
   CustomeTimelineSeparator,
@@ -15,7 +13,6 @@ import './index.css';
 const resume = () => {
   return (
     <div>
-      
       {/* education and Experience */}
       <Grid>
         <Grid item className='section_title mb_30'>
@@ -30,32 +27,47 @@ const resume = () => {
               <CustomeTimeline
                 icon={<WorkIcon />}
                 title={'Professional Experience'}
-                
               >
                 {resumeData.professionalExperience.map((exp) => {
                   return (
-                    
                     <TimelineItem key={exp.title}>
                       <CustomeTimelineSeparator />
 
                       <TimelineContent className='timelineContent'>
-                        <Typography className='timelineTitle'>{exp.title}</Typography>
-                        <Typography variant="caption" className='timelineDate'>{exp.date}</Typography>
-                        <Typography variant="body2" className='timelineDesc'>{exp.description}</Typography>
+                        <Typography className='timelineTitle'>
+                          {exp.title}
+                        </Typography>
+                        <Typography variant='caption' className='timelineDate'>
+                          {exp.date}
+                        </Typography>
+                        <Typography variant='body2' className='timelineDesc'>
+                          {exp.description}
+                        </Typography>
                       </TimelineContent>
-        
                     </TimelineItem>
-                 
                   );
                 })}
               </CustomeTimeline>
             </Grid>
+
             {/* Educational Training */}
             <Grid item xs={12} md={6}>
               <CustomeTimeline
                 icon={<SchoolIcon />}
                 title={'Education and training'}
-              />
+              >
+                {resumeData.educationTraning.map((educ) => {
+                  return (
+                    <TimelineItem key={educ.date}>
+                      <CustomeTimelineSeparator />
+                      <TimelineContent>
+                        <Typography variant="h5">{educ.date}</Typography>
+                        <Typography variant="caption">{educ.title}</Typography>
+                      </TimelineContent>
+                    </TimelineItem>
+                  );
+                })}
+              </CustomeTimeline>
             </Grid>
           </Grid>
         </Grid>
@@ -69,10 +81,6 @@ const resume = () => {
 
       {/* Contact */}
       <Grid></Grid>
-
-      <EducationTraning />
-
-      <ProfessionalExp />
     </div>
   );
 };
