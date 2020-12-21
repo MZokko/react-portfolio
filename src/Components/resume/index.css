@@ -1,14 +1,32 @@
+.section_title {
+  position: relative;
+  display: inline-block;
+  padding: 0 3px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section_title > span {
+  background-color:var(--main-color) !important;
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  bottom: 7px;
+  opacity: 0.4;
+  left: 0;
+}
+
 .profExpTimeLine .timelineContent .timelineTitle {
   font-size: 16px !important;
   font-weight: 500 !important;
 }
 
 .profExpTimeLine .timelineContent.timelineDate {
-    color: darkslategrey;
+  color: darkslategrey;
 }
 
 .profExpTimeLine .timelineContent .timelineDesc {
-    color: gray;
-    font-size: small;
-    margin-top: 6px;
+  color: gray;
+  font-size: small;
+  margin-top: 6px;
 }
