@@ -1,23 +1,27 @@
 import React from 'react';
-import {styles} from './style';
+
+import './portefolio.css';
+
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 const portefolio = () => {
   return (
-    
-    <Card elevation={3} variant='elevation' classes={styles.Portefolio} >
-      <Typography variant='h5'>Projects</Typography>
-      <Grid container spacing={3} className={{margin: '10px 10px 10px 10px'}}>
+    // classes={styles.Portefolio}
+    <div elevation={3} variant='elevation' className='portefolioContainer' >
+      <Grid item className='section_title mb_30'>
+          <span></span>
+          <h6 className='section_title_text'>Portefolio</h6>
+        </Grid>
+      <Grid container spacing={3}>
         <Grid item xs={3}>
-          <Card classes={{overflow: 'visible'}}>
+          <Card >
             <CardMedia>
               <GitHubIcon />
             </CardMedia>
@@ -29,13 +33,18 @@ const portefolio = () => {
             </CardContent>
 
             <CardActions>
-              <a target='_blank' href="https://github.com/MZokko/cleanAppAdvStud">See code</a>
+              <a
+                target='_blank'
+                href='https://github.com/MZokko/cleanAppAdvStud'
+              >
+                See code
+              </a>
             </CardActions>
           </Card>
         </Grid>
 
         <Grid item xs={3}>
-        <Card  classes={{overflow: 'visible'}}>
+          <Card>
             <CardMedia>
               <GitHubIcon />
             </CardMedia>
@@ -47,13 +56,18 @@ const portefolio = () => {
             </CardContent>
 
             <CardActions>
-              <a target='_blank' href="https://github.com/MZokko/burger-React-workshop">See code</a>
+              <a
+                target='_blank'
+                href='https://github.com/MZokko/burger-React-workshop'
+              >
+                See code
+              </a>
             </CardActions>
           </Card>
         </Grid>
 
         <Grid item xs={3}>
-        <Card  classes={{overflow: 'visible'}}>
+          <Card >
             <CardMedia>
               <GitHubIcon />
             </CardMedia>
@@ -65,13 +79,14 @@ const portefolio = () => {
             </CardContent>
 
             <CardActions>
-              <a target='_blank' href="https://github.com/MZokko/finalCrossApp">See code</a>
+              <a target='_blank' href='https://github.com/MZokko/finalCrossApp'>
+                See code
+              </a>
             </CardActions>
           </Card>
         </Grid>
       </Grid>
-    </Card>
-
+    </div>
   );
 };
 

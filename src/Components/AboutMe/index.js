@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Card from '@material-ui/core/Card';
 import { Typography } from '@material-ui/core';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineItem from '@material-ui/lab/TimelineItem';
@@ -41,8 +40,8 @@ const CustomTimelineItem = (props) => {
 
 const AboutMe = () => {
   return (
-    <div>
-      <Card>
+    
+      
         <div className='aboutMeContainer'>
           <div className='aboutMeNameTitle'>
             <Typography className='name'>{resumeData.name}</Typography>
@@ -75,8 +74,8 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-      </Card>
-    </div>
+      
+    
   );
 };
 

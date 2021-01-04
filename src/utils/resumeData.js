@@ -2,7 +2,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import WebIcon from '@material-ui/icons/Web';
 import PaletteIcon from '@material-ui/icons/Palette';
-import TimerIcon from '@material-ui/icons/Timer';
+import FindInPageIcon from '@material-ui/icons/FindInPage';
 
 export default {
   name: 'Alexandre Moradel',
@@ -71,8 +71,37 @@ export default {
   ],
 
   serivces: [
-    { title: 'Web dev', description: 'full responsive web page developement',icon:<WebIcon/> },
-    { title: 'Design', description: 'work with adobe photoshop for design and logo',icon:<PaletteIcon/> },
-    { title: 'Efficient ', description: 'fast delivery product',icon:<TimerIcon/> },
+    {
+      title: 'Web developement',
+      description:
+        'full responsive web page developement, build for a modern day usage of internet',
+      icon: <WebIcon />,
+    },
+    {
+      title: 'Web design',
+      description:
+        'Give you a good visual representation to discuss about your project with a visually appealing and easy to identify web design',
+      icon: <PaletteIcon />,
+    },
+    {
+      title: 'Search Engine Optimization',
+      description:
+        'Create a efficient connection with your customers with a good ranking in google with the SEO service',
+      icon: <FindInPageIcon />,
+    },
+  ],
+
+  portefolio: [
+    {
+      title: 'cleaning roaster app',
+      techDescription: 'java / android mobile',
+      link: '',
+    },
+    {
+      title: 'Memory forge',
+      techDescription: 'React native / cross mobile app',
+      link: '',
+    },
+    { title: 'Burger order', techDescription: 'React js / web app', link: '' },
   ],
 };
