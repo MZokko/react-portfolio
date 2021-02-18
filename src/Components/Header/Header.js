@@ -30,11 +30,13 @@ function Header(props) {
           <Nav.Link
             as={NavLink}
             to='/resume'
-            className={pathName === '/resume' ? 'headerActiveLink' : 'headerLink'}
+            className={
+              pathName === '/resume' ? 'headerActiveLink' : 'headerLink'
+            }
           >
             Resume
           </Nav.Link>
-
+          {/* portefolio nav */}
           <Nav.Link
             as={NavLink}
             to='/portefolio'
@@ -45,7 +47,6 @@ function Header(props) {
             Portefolio
           </Nav.Link>
         </Nav>
-        {/* portefolio nav */}
 
         <div className='headerRightDiv'>
           {Object.keys(resumeData.social).map((key) => {

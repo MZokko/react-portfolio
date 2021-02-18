@@ -8,6 +8,8 @@ import { Container, Grid } from '@material-ui/core';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import Flip from 'react-reveal/Flip';
+
 import './App.css';
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
     <Container className='containerMain'>
       <Grid container spacing={6}>
         <Grid item xs={12} sm={12} md={4} lg={3}>
-          <AboutMe />
+          <Flip>
+            <AboutMe />
+          </Flip>
         </Grid>
         {/*item end*/}
 
@@ -35,7 +39,6 @@ function App() {
               <Route path='/resume'>
                 <Resume />
               </Route>
-
             </Switch>
           </Router>
         </Grid>
