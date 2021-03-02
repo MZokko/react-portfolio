@@ -15,9 +15,7 @@ import './App.css';
 function App() {
   return (
     <Container className='containerMain'>
-      
       <Grid container spacing={6}>
-        
         <Grid item xs={12} sm={12} md={4} lg={3}>
           <Flip>
             <AboutMe />
@@ -30,18 +28,15 @@ function App() {
             <Header />
 
             <Switch>
-              <Route path='/'>
-                <LandingPage />
-              </Route>
 
-              <Route path='/portefolio'>
-                <Portefolio />
-              </Route>
+              <Route path='/' exact component={LandingPage}/>
 
-              <Route path='/resume'>
-                <Resume />
-              </Route>
+              <Route path='/portefolio' component={Portefolio}/>
+
+              <Route path='/resume' component={Resume}/>
+
             </Switch>
+            
           </Router>
         </Grid>
         {/*item end*/}

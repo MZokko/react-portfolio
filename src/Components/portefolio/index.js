@@ -23,7 +23,7 @@ const portefolio = () => {
         <span></span>
         <h6 className='section_title_text'>Portefolio</h6>
       </Grid>
-      <Grid container spacing={3}>
+      <Grid container spacing={3} className='gridPortefolioCard'>
         <Grid item xs={3}>
           <Flip>
             <Card>

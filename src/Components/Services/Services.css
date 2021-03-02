@@ -19,11 +19,17 @@
 
 .gridItem .MuiCard-root {
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 10px;
   height: 100%;
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba(67, 67, 70, 0.37);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .sectionIcon{
   display:flex;
   justify-content:center;
 }
+

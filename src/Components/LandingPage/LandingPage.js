@@ -9,7 +9,7 @@ function LandingPage() {
         <div>
 
             <Services/>
-            <MyGitFeed/>
+            {/* <MyGitFeed/> */}
             <Portefolio/>
             <Resume/>
             
