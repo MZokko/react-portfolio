@@ -12,7 +12,7 @@ import './index.css';
 
 const resume = () => {
   return (
-    <div>
+    <div >
       {/* education and Experience */}
       <Grid>
         <Grid item className='section_title mb_30'>
@@ -20,7 +20,7 @@ const resume = () => {
           <h6 className='section_title_text'>Resume</h6>
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid item xs={12} className="resumeContainer">
           <Grid container className='profExpTimeLine'>
             {/* professional Experience */}
             <Grid item xs={12} md={6}>
