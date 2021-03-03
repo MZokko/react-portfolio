@@ -65,7 +65,7 @@ const portefolio = () => {
               <CardActions>
                 <a
                   target='_blank'
-                  href='https://github.com/MZokko/burger-React-workshop'
+                  href='https://burger-react-ae741.web.app/?fbclid=IwAR1nMPn7BFHuQjUZGNOZokY7kpjK_P5iqQOBDv9u4WGlX8agq-HlRlrCjZw'
                 >
                   See code
                 </a>

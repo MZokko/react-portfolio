@@ -9,7 +9,7 @@ export default {
   title: 'Full stack developer',
 
   birthdate: 'Nov 1992',
-  email: 'dummy@try.com',
+  email: 'alexandremradel92@gmail.com',
 
   location: 'Sydney',
 
@@ -20,7 +20,7 @@ export default {
       icon: <LinkedInIcon />,
     },
     Github: {
-      link: 'https://www.github.com/',
+      link: 'https://github.com/MZokko',
       text: 'Alex Git',
       icon: <GitHubIcon />,
     },
