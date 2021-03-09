@@ -54,10 +54,7 @@ const AboutMe = () => {
           <div className='timelineAboutme'>
             <CustomeTimeline icon={<PersonOutlineIcon />}>
               <CustomTimelineItem title={'Email'} text={resumeData.email} />
-              <CustomTimelineItem
-                title={'Location'}
-                text={resumeData.location}
-              />
+              <CustomTimelineItem title={'Location'} text={resumeData.location}/>
 
               {/* map thru social array of resumeData for the social item of the timeline */}
               {Object.keys(resumeData.social).map((key) => (

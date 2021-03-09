@@ -20,7 +20,7 @@
   font-weight: bold;
 }
 .aboutMeNameTitle .title {
-  color: rgb(182, 179, 179);
+  color: rgb(214, 213, 213);
   font-size: 13px;
 }
 
@@ -52,7 +52,7 @@
 
 .timelineText {
   font-size: 13.5px !important;
-  color:rgb(182, 179, 179);
+  color:rgb(214, 213, 213);
   font-weight: 400;
 }
 .timelineText > a {
