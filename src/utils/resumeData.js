@@ -42,13 +42,13 @@ export default {
       title: 'Childcare',
       date: '2011-2014',
       description:
-        'n an outdoor center named « côte des carrières » in Jouy Le Moutier (France)',
+        'working in an outdoor center named « côte des carrières » in Jouy Le Moutier (France)',
     },
     {
       title: 'Technician',
       date: '2011-2014',
       description:
-        'in the group named cofely during a part of the summer holiday, during high school',
+        'company named COFELY during a part of the summer holiday, during high school',
     },
     {
       title: 'Concert and event’s ​organizer​',
