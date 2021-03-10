@@ -26,8 +26,8 @@
 }
 
 .profExpTimeLine .timelineContent .timelineDesc {
-  color: rgb(182, 179, 179);
-  font-size: small;
+  color: rgba(11, 247, 255, 0.671);
+  font-size: medium;
   margin-top: 6px;
 }
 

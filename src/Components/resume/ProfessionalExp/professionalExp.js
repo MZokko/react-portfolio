@@ -31,7 +31,7 @@ const professionalExp = () => {
                     Labour agency : Greenstaff
                   </span>
                   <br />
-                  LandscaperatGreenstaff(Laboureragency)
+                  Landscaper at Greenstaff(Laboureragency)
                 </Typography>
               </CardContent>
             </Card>
