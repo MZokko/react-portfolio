@@ -3,5 +3,3 @@ Personal Portfolio
 Generated with npx create-react-app
 Bootstrap / Material UI 
 
-Deploy with netlify
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ca911767-a1bd-43d9-ae56-3c0a529e478b/deploy-status)](https://app.netlify.com/sites/myportefolioalex/deploys)
