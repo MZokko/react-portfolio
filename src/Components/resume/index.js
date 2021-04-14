@@ -5,9 +5,7 @@ import TimelineItem from '@material-ui/lab/TimelineItem';
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
 import resumeData from '../../utils/resumeData';
-import CustomeTimeline, {
-  CustomeTimelineSeparator,
-} from '../Timeline/CustomeTimeline';
+import CustomeTimeline, {CustomeTimelineSeparator,} from '../Timeline/CustomeTimeline';
 import './index.css';
 
 const resume = () => {

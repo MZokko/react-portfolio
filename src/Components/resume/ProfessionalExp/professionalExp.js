@@ -6,7 +6,6 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import React from 'react';
-
 import CardContent from '@material-ui/core/CardContent';
 
 

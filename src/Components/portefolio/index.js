@@ -1,18 +1,13 @@
 import React from 'react';
-
 import './portefolio.css';
-
 import {
   Grid,
   Card,
   CardActions,
   CardContent,
   CardMedia,
-  Typography,
-} from '@material-ui/core';
-
+  Typography,} from '@material-ui/core';
 import Flip from 'react-reveal/Flip';
-
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 const portefolio = () => {

@@ -1,15 +1,10 @@
 import React from 'react';
-
 import { Typography } from '@material-ui/core';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import GetAppIcon from '@material-ui/icons/GetApp';
-
-import CustomeTimeline, {
-  CustomeTimelineSeparator,
-} from '../Timeline/CustomeTimeline';
-
+import CustomeTimeline, {CustomeTimelineSeparator,} from '../Timeline/CustomeTimeline';
 import './styles.css';
 import imgProfile from '../../assets/images/displayImg.jpg';
 import resumeData from '../../utils/resumeData';
