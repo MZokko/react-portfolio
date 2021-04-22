@@ -10,6 +10,7 @@ body {
     background: -webkit-linear-gradient(133deg, rgba(131,58,180,1) 0%, rgba(45,114,204,0.9094012605042017) 76%, rgba(123,176,177,0.7161239495798319) 100%);
     background: linear-gradient(133deg, rgba(131,58,180,1) 0%, rgba(45,114,204,0.9094012605042017) 76%, rgba(123,176,177,0.7161239495798319) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#7bb0b1",GradientType=1);
+    
 }
 
 code {

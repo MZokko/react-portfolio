@@ -71,14 +71,6 @@ const resume = () => {
         </Grid>
       </Grid>
 
-      {/* Services */}
-      <Grid></Grid>
-
-      {/* Skills */}
-      <Grid></Grid>
-
-      {/* Contact */}
-      <Grid></Grid>
     </div>
   );
 };

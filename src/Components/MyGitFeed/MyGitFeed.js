@@ -1,18 +1,24 @@
 import React,  { useEffect, useState } from 'react';
 import { Card, Grid } from '@material-ui/core';
+import axios from 'axios'
 
 const MyGitFeed = () => {
 
   //loading fetch data from git api
-  const  githubApiFetch = async()=>{
-    const url= 'https://api.github.com/users/{MZokko}'
-    const response =  await fetch(url);
-    const result = await response.json();
-    console.log(result)
-  }
+  // const  githubApiFetch = async()=>{
+  //   const url= 'https://api.github.com/repos/{MZokko}/{react-portfolio}'
+  //   // const response =  await axios.get().then().catch;
+  //   const result = await response.json();
+  //   console.log(result)
+  // }
 
   useEffect(() => {
-    githubApiFetch();
+    try {
+      // githubApiFetch();
+    } catch (error) {
+      console.log(error.message)
+    }
+    
   }, [])
 
 
