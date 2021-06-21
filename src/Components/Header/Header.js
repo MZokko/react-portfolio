@@ -32,7 +32,7 @@ function Header(props) {
               pathName === '/resume' ? 'headerActiveLink' : 'headerLink'
             }
           >
-            Resume
+            Resumee
           </Nav.Link>
           {/* portefolio nav */}
           <Nav.Link
