@@ -6,6 +6,7 @@ import LandingPage from './Components/LandingPage/LandingPage';
 import { Container, Grid } from '@material-ui/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Flip from 'react-reveal/Flip';
+//o
 import './App.css';
 
 function App() {
