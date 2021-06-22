@@ -26,6 +26,8 @@ function App() {
 
             <Switch>
 
+              <Route path='react-portfolio/' component={LandingPage}/>
+
               <Route path='/' exact component={LandingPage}/>
 
               <Route path='/portefolio' component={Portefolio}/>
