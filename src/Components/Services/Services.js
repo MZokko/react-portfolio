@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Grid } from '@material-ui/core';
 import './Services.css';
-import ResumeData from '../../utils/resumeData';
+import {data} from '../../utils/resumeData';
 import Flip from 'react-reveal/Flip';
 
 function Services() {
@@ -13,7 +13,7 @@ function Services() {
       </Grid>
 
       <Grid container spacing={3}>
-        {ResumeData.serivces.map((serv) => {
+        {data.serivces.map((serv) => {
           return (
             <Grid
               key={serv.title}

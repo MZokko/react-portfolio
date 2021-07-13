@@ -4,7 +4,7 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
-import resumeData from '../../utils/resumeData';
+import {data} from '../../utils/resumeData';
 import CustomeTimeline, {CustomeTimelineSeparator,} from '../Timeline/CustomeTimeline';
 import './index.css';
 
@@ -26,7 +26,7 @@ const resume = () => {
                 icon={<WorkIcon />}
                 title={'Professional Experience'}
               >
-                {resumeData.professionalExperience.map((exp) => {
+                {data.professionalExperience.map((exp) => {
                   return (
                     <TimelineItem key={exp.title}>
                       <CustomeTimelineSeparator />
@@ -54,7 +54,7 @@ const resume = () => {
                 icon={<SchoolIcon />}
                 title={'Education and training'}
               >
-                {resumeData.educationTraning.map((educ) => {
+                {data.educationTraning.map((educ) => {
                   return (
                     <TimelineItem key={educ.date}>
                       <CustomeTimelineSeparator />

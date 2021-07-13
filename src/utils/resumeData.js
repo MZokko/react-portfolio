@@ -4,7 +4,8 @@ import WebIcon from '@material-ui/icons/Web';
 import PaletteIcon from '@material-ui/icons/Palette';
 import FindInPageIcon from '@material-ui/icons/FindInPage';
 
-export default {
+
+export const data ={
   name: 'Alexandre Moradel',
   title: 'Full stack developer',
 

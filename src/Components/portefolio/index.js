@@ -34,6 +34,7 @@ const portefolio = () => {
 
               <CardActions>
                 <a
+                rel="noreferrer"
                   target='_blank'
                   href='https://github.com/MZokko/cleanAppAdvStud'
                 >
@@ -59,6 +60,7 @@ const portefolio = () => {
 
               <CardActions>
                 <a
+                rel="noreferrer"
                   target='_blank'
                   href='https://burger-react-ae741.web.app/?fbclid=IwAR1nMPn7BFHuQjUZGNOZokY7kpjK_P5iqQOBDv9u4WGlX8agq-HlRlrCjZw'
                 >
@@ -84,6 +86,7 @@ const portefolio = () => {
 
               <CardActions>
                 <a
+                rel="noreferrer"
                   target='_blank'
                   href='https://github.com/MZokko/finalCrossApp'
                 >

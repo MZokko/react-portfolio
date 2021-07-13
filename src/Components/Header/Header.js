@@ -2,10 +2,10 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, NavLink, withRouter } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 import HomeIcon from '@material-ui/icons/Home';
 import TelegramIcon from '@material-ui/icons/Telegram';
-import resumeData from '../../utils/resumeData';
+import {data} from '../../utils/resumeData';
 import MyBtn from '../Button/MyButton';
 import './Header.css';
 
@@ -47,10 +47,10 @@ function Header(props) {
         </Nav>
 
         <div className='headerRightDiv'>
-          {Object.keys(resumeData.social).map((key) => {
+          {Object.keys(data.social).map((key) => {
             return (
-              <a key={key} href={resumeData.social[key].link} target='_blank'>
-                {resumeData.social[key].icon}
+              <a key={key} href={data.social[key].link} rel="noreferrer" target='_blank'>
+                {data.social[key].icon}
               </a>
             );
           })}
