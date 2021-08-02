@@ -104,5 +104,6 @@ export const data ={
       link: '',
     },
     { title: 'Burger order', techDescription: 'React js / web app', link: '' },
+    { title: 'website for a Tattoo studio', techDescription: 'React js / Firebase(storage, firestore, hosting) / CI/CD pipeline', link: '' },
   ],
 };
