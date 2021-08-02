@@ -3,9 +3,7 @@ import './portefolio.css';
 import {
   Grid,
   Card,
-  CardActions,
   CardContent,
-  CardMedia,
   Typography,} from '@material-ui/core';
 import Flip from 'react-reveal/Flip';
 import {data} from '../../utils/resumeData'
@@ -38,15 +36,17 @@ const portefolio = () => {
                     )})}
                   </div>
                   <span></span>
+                  <CardContent>
                   <div className='projTitle'>{projects.title}</div>
                   <span></span>
-                  <div className='projDesc'>{projects.techDescription}</div>
+                  <Typography className='projDesc'>{projects.techDescription}</Typography>
 
                   <div className='projLinks'>
                   {projects.links.map((url)=>{return(
                     <a key={url.url} href={url.url} target='_blank' rel='noreferrer' >Have a Look</a>
                   )})}
                   </div>
+                  </CardContent>
                 </Card>
               </Flip>
             </Grid>
