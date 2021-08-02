@@ -30,3 +30,7 @@
     opacity: 0.4;
     left: 0;
   }
+
+  .projIconSection{
+      display: flex;justify-content: center;
+  }

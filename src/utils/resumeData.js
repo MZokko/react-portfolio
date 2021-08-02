@@ -3,7 +3,9 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import WebIcon from '@material-ui/icons/Web';
 import PaletteIcon from '@material-ui/icons/Palette';
 import FindInPageIcon from '@material-ui/icons/FindInPage';
-
+import StorageIcon from '@material-ui/icons/Storage';
+import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
+import DevicesIcon from '@material-ui/icons/Devices';
 
 export const data ={
   name: 'Alexandre Moradel',
@@ -94,16 +96,18 @@ export const data ={
 
   portefolio: [
     {
+      icons:[{id:1,icon:<GitHubIcon />},{id:2,icon:<StorageIcon />},{id:3,icon:<PhoneAndroidIcon />}],
       title: 'cleaning roaster app',
-      techDescription: 'java / android mobile',
-      link: '',
+      techDescription: 'Mobile application built with android studio using java and MVC architecture, using firebase web services for back end such as authentication,real time data base.(java / android mobile)',
+     links:[{url:'https://github.com/MZokko/cleanAppAdvStud'}],
     },
     {
+      icons:[{id:1,icon:<GitHubIcon />},{id:2,icon:<StorageIcon />},{id:3,icon:<PhoneAndroidIcon />}],
       title: 'Memory forge',
-      techDescription: 'React native / cross mobile app',
-      link: '',
+      techDescription: 'A math based memory game, Cross mobile application built using React-native framework and Firebase web services(React native / cross mobile app)',
+      links:[{url:'https://github.com/MZokko/finalCrossApp'}],
     },
-    { title: 'Burger order', techDescription: 'React js / web app', link: '' },
-    { title: 'website for a Tattoo studio', techDescription: 'React js / Firebase(storage, firestore, hosting) / CI/CD pipeline', link: '' },
+    { icons:[{id:1,icon:<GitHubIcon />},{id:2,icon:<StorageIcon />},{id:3,icon:<DevicesIcon />}],title: 'Burger order', techDescription: 'Build and order a burger, a website created with react using firebase webservices Database(realtime database) store the order informations, the users informations and location and also firebase hosting, see link below.(React js / web app)', links:[{url:'https://burger-react-ae741.web.app/?fbclid=IwAR1nMPn7BFHuQjUZGNOZokY7kpjK_P5iqQOBDv9u4WGlX8agq-HlRlrCjZw'}], },
+    {icons:[{id:1,icon:<GitHubIcon />},{id:2,icon:<StorageIcon />},{id:3,icon:<DevicesIcon />}],title: 'website for a Tattoo studio', techDescription: 'Website created with React js, using Firebase(storage, firestore, hosting) with a CI/CD pipeline to automatate and faster the testing and deployment process', links:[{url:'https://tattoo-project-a031d.web.app'}], },
   ],
 };

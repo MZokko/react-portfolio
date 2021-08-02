@@ -8,7 +8,7 @@ import {
   CardMedia,
   Typography,} from '@material-ui/core';
 import Flip from 'react-reveal/Flip';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import {data} from '../../utils/resumeData'
 
 const portefolio = () => {
   return (
@@ -19,83 +19,42 @@ const portefolio = () => {
         <h6 className='section_title_text'>Portefolio</h6>
       </Grid>
       <Grid container spacing={3} className='gridPortefolioCard'>
-        <Grid item xs={3}>
-          <Flip>
-            <Card>
-              <CardMedia>
-                <GitHubIcon />
-              </CardMedia>
-              <CardContent>
-                <Typography gutterBottom variant='h5' component='h2'>
-                  automated roaster for shared house
-                </Typography>
-                <Typography>(mobile android Java)</Typography>
-              </CardContent>
+      {
+        data.portefolio.map((projects)=>{
+          return (
+            <Grid
+              key={projects.title}
+              item
+              xs={12}
+              md={6}
+              lg={3}
+              className='gridItem'
+            >
+              <Flip>
+                <Card className='projCard' elevation={4}>
+                  <div className='projIconSection'>
+                    {projects.icons.map((i)=>{return (
+                      <div key={i.id} class>{i.icon}</div>
+                    )})}
+                  </div>
+                  <span></span>
+                  <div className='projTitle'>{projects.title}</div>
+                  <span></span>
+                  <div className='projDesc'>{projects.techDescription}</div>
 
-              <CardActions>
-                <a
-                rel="noreferrer"
-                  target='_blank'
-                  href='https://github.com/MZokko/cleanAppAdvStud'
-                >
-                  See code
-                </a>
-              </CardActions>
-            </Card>
-          </Flip>
-        </Grid>
+                  <div className='projLinks'>
+                  {projects.links.map((url)=>{return(
+                    <a key={url.url} href={url.url} target='_blank' rel='noreferrer' >Have a Look</a>
+                  )})}
+                  </div>
+                </Card>
+              </Flip>
+            </Grid>
+          )
+        })
+      }
+        
 
-        <Grid item xs={3}>
-          <Flip>
-            <Card>
-              <CardMedia>
-                <GitHubIcon />
-              </CardMedia>
-              <CardContent>
-                <Typography gutterBottom variant='h5' component='h2'>
-                  React workshop
-                </Typography>
-                <Typography>(webApp)</Typography>
-              </CardContent>
-
-              <CardActions>
-                <a
-                rel="noreferrer"
-                  target='_blank'
-                  href='https://burger-react-ae741.web.app/?fbclid=IwAR1nMPn7BFHuQjUZGNOZokY7kpjK_P5iqQOBDv9u4WGlX8agq-HlRlrCjZw'
-                >
-                  See code
-                </a>
-              </CardActions>
-            </Card>
-          </Flip>
-        </Grid>
-
-        <Grid item xs={3}>
-          <Flip>
-            <Card>
-              <CardMedia>
-                <GitHubIcon />
-              </CardMedia>
-              <CardContent>
-                <Typography gutterBottom variant='h5' component='h2'>
-                  Number Guess Game
-                </Typography>
-                <Typography>(mobile app React-native )</Typography>
-              </CardContent>
-
-              <CardActions>
-                <a
-                rel="noreferrer"
-                  target='_blank'
-                  href='https://github.com/MZokko/finalCrossApp'
-                >
-                  See code
-                </a>
-              </CardActions>
-            </Card>
-          </Flip>
-        </Grid>
       </Grid>
     </div>
   );
