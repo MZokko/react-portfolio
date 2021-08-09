@@ -9,7 +9,7 @@ import DevicesIcon from '@material-ui/icons/Devices';
 
 export const data ={
   name: 'Alexandre Moradel',
-  title: 'Full stack developer',
+  title: 'Web developer',
 
   birthdate: 'Nov 1992',
   email: 'alexandremradel92@gmail.com',
