@@ -6,7 +6,7 @@ import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import CustomeTimeline, {CustomeTimelineSeparator,} from '../Timeline/CustomeTimeline';
 import './styles.css';
-import imgProfile from '../../assets/images/displayImg.jpg';
+import imgProfile from '../../assets/images/imgAlex.jpg';
 import {data} from '../../utils/resumeData';
 import MyButton from '../Button/MyButton';
 

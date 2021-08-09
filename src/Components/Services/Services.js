@@ -3,6 +3,7 @@ import { Card, Grid } from '@material-ui/core';
 import './Services.css';
 import {data} from '../../utils/resumeData';
 import Flip from 'react-reveal/Flip';
+import SvgService from './SvgService'
 
 function Services() {
   return (
@@ -11,7 +12,7 @@ function Services() {
         <span></span>
         <h6 className='section_title_text'>Services</h6>
       </Grid>
-
+{/* <SvgService></SvgService> */}
       <Grid container spacing={3}>
         {data.serivces.map((serv) => {
           return (
