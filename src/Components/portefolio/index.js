@@ -3,8 +3,7 @@ import './portefolio.css';
 import {
   Grid,
   Card,
-  CardContent,
-  Typography,} from '@material-ui/core';
+} from '@material-ui/core';
 import Flip from 'react-reveal/Flip';
 import {data} from '../../utils/resumeData'
 
@@ -16,7 +15,7 @@ const portefolio = () => {
         <span></span>
         <h6 className='section_title_text'>Portefolio</h6>
       </Grid>
-      <Grid container spacing={3} className='gridPortefolioCard'>
+      {/* <Grid container spacing={3} className='gridPortefolioCard'>
       {
         data.portefolio.map((projects)=>{
           return (
@@ -55,7 +54,31 @@ const portefolio = () => {
       }
         
 
-      </Grid>
+      </Grid> */}
+      <div className='flexportfolio'>
+        {data.portefolio.map((portefolio)=>{
+          return (
+            <Flip>
+            <Card key={portefolio.title} className='cardPortfolio'>
+            <div className='projIconSection'>
+            {portefolio.icons.map((i)=>{return(<div key={i.id} >{i.icon}</div>)})}
+            </div>
+            <span></span>
+            <h4 className='projTitle'>
+            {portefolio.title}
+            </h4>
+            <div className='projDesc'>
+            {portefolio.techDescription}
+            </div>
+            <div className='projLinks'>
+            {portefolio.links.map((url)=>{return( <a key={url.url} href={url.url} target='_blank' rel='noreferrer' >Have a Look</a>)})}
+            </div>
+              
+            </Card>
+            </Flip>
+          )
+        })}
+      </div>
     </div>
   );
 };

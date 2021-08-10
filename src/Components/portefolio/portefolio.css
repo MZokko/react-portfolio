@@ -34,3 +34,34 @@
   .projIconSection{
       display: flex;justify-content: center;
   }
+  
+
+  .flexportfolio{
+      /* height: 100vh; */
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+  }
+  .cardPortfolio{
+      /*background setting*/
+      background: rgba(131, 58, 180, 0.555);
+      background: -moz-linear-gradient(133deg, rgba(131,58,180,0.555) 0%, rgba(45,114,204,0.555) 76%, rgba(123,176,177,0.555) 100%);
+      background: -webkit-linear-gradient(133deg, rgba(131,58,180,0.555) 0%, rgba(45,114,204,0.555) 76%, rgba(123,176,177,0.555) 100%);
+      background: linear-gradient(133deg, rgba(131,58,180,0.555) 0%, rgba(45,114,204,0.555) 76%, rgba(123,176,177,0.555) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#7bb0b1",GradientType=1);
+      box-shadow: 0 8px 32px 0 rgba(76, 76, 77, 0.37);
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+
+      /*background setting*/
+      width:23rem;
+      height: 40vh;
+      padding:  0rem 0.65rem;
+      margin-bottom:3.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
