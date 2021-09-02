@@ -21,10 +21,10 @@ function App() {
     {/* <Container className='containerMain'> */}
       <Grid container spacing={6}>
         <Grid item xs={12} sm={12} md={4} lg={3}>
+        <ThemeToggle/>
           <Flip>
             <AboutMe />
           </Flip>
-          <ThemeToggle/>
         </Grid>
         {/*item end*/}
 
