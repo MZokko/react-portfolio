@@ -7,6 +7,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import {data} from '../../utils/resumeData';
 import CustomeTimeline, {CustomeTimelineSeparator,} from '../Timeline/CustomeTimeline';
 import './index.css';
+import Title from '../UI/TitleStyle'
 
 const resume = () => {
   return (
@@ -15,7 +16,8 @@ const resume = () => {
       <Grid>
         <Grid item className='section_title mb_30'>
           <span></span>
-          <h6 className='section_title_text'>Resume</h6>
+          <Title>Resume</Title>
+          {/* <h6 className='section_title_text'>Resume</h6> */}
         </Grid>
 
         <Grid item xs={12} className="resumeContainer">

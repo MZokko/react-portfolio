@@ -4,13 +4,15 @@ import './Services.css';
 import {data} from '../../utils/resumeData';
 import Flip from 'react-reveal/Flip';
 // import SvgService from './SvgService'
+import Title from '../UI/TitleStyle'
 
 function Services() {
   return (
     <Grid>
       <Grid item className='section_title mb_30'>
         <span></span>
-        <h6 className='section_title_text'>Services</h6>
+        <Title>Resume</Title>
+        {/* <h6 className='section_title_text'>Services</h6> */}
       </Grid>
 {/* <SvgService></SvgService> */}
       <Grid container spacing={3}>

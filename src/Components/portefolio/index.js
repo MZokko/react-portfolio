@@ -1,11 +1,9 @@
 import React from 'react';
 import './portefolio.css';
-import {
-  Grid,
-  Card,
-} from '@material-ui/core';
+import {Grid,Card,} from '@material-ui/core';
 import Flip from 'react-reveal/Flip';
 import {data} from '../../utils/resumeData'
+import Title from '../UI/TitleStyle'
 
 const portefolio = () => {
   return (
@@ -13,7 +11,8 @@ const portefolio = () => {
     <div elevation={3} variant='elevation' className='portefolioContainer'>
       <Grid item className='section_title mb_30'>
         <span></span>
-        <h6 className='section_title_text'>Portefolio</h6>
+        <Title>Portefolio</Title>
+        {/* <h6 className='section_title_text'>Portefolio</h6> */}
       </Grid>
       {/* <Grid container spacing={3} className='gridPortefolioCard'>
       {
@@ -49,12 +48,8 @@ const portefolio = () => {
                 </Card>
               </Flip>
             </Grid>
-          )
-        })
-      }
-        
-
-      </Grid> */}
+          )})}
+          </Grid> */}
       <div className='flexportfolio'>
         {data.portefolio.map((portefolio)=>{
           return (
