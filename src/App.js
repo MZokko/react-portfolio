@@ -19,7 +19,7 @@ function App() {
     <Theme>
     <ContainerMain>
     {/* <Container className='containerMain'> */}
-      <Grid container spacing={6}>
+      <Grid container={true} spacing={1}>
         <Grid item xs={12} sm={12} md={4} lg={3}>
         <ThemeToggle/>
           <Flip>
@@ -28,7 +28,7 @@ function App() {
         </Grid>
         {/*item end*/}
 
-        <Grid item xs>
+        <Grid item  xs={12} sm={12} md={8} lg={9} className='mainGrid' >
           <Router>
             <Header />
 
@@ -44,10 +44,7 @@ function App() {
             
           </Router>
         </Grid>
-        {/*item end*/}
-      </Grid>
-      {/*grid container end*/}
-    {/* </Container> */}
+        </Grid>
     </ContainerMain>
     </Theme>
     </ThemeStore>

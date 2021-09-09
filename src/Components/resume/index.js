@@ -11,7 +11,7 @@ import Title from '../UI/TitleStyle'
 
 const resume = () => {
   return (
-    <div >
+    <div  className='resumeContainerFlex'>
       {/* education and Experience */}
       <Grid>
         <Grid item className='section_title mb_30'>

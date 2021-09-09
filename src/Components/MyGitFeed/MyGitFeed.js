@@ -4,17 +4,17 @@ import axios from 'axios'
 
 const MyGitFeed = () => {
 
-  //loading fetch data from git api
-  // const  githubApiFetch = async()=>{
-  //   const url= 'https://api.github.com/repos/{MZokko}/{react-portfolio}'
-  //   // const response =  await axios.get().then().catch;
-  //   const result = await response.json();
-  //   console.log(result)
-  // }
+  // loading fetch data from git api
+  const  githubApiFetch = async()=>{
+    let url= 'https://api.github.com/repos/{MZokko}/{react-portfolio}'
+    const response =  await axios.get().then().catch;
+    const result = await response.json();
+    console.log(result)
+  }
 
   useEffect(() => {
     try {
-      // githubApiFetch();
+       githubApiFetch();
     } catch (error) {
       console.log(error.message)
     }

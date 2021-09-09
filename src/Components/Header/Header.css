@@ -1,6 +1,6 @@
 .navbarContainer {
   margin-bottom: 30px;
-  padding: 0px 22px 0px 0px;
+  padding: 0px 5px 0px 0px;
   background: rgb(131,58,180);
   background: -moz-linear-gradient(133deg, rgba(131,58,180,1) 0%, rgba(45,114,204,0.9094012605042017) 76%, rgba(123,176,177,0.7161239495798319) 100%);
   background: -webkit-linear-gradient(133deg, rgba(131,58,180,1) 0%, rgba(45,114,204,0.9094012605042017) 76%, rgba(123,176,177,0.7161239495798319) 100%);
@@ -12,7 +12,7 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   height: 70px;
-  width: 100%;
+  /* width: 100%; */
   line-height: 70px;
 }
 
@@ -49,6 +49,16 @@
 
 .navbarContainer .headerRightDiv > a > .MuiSvgIcon-root {
   font-size: 16px;
-  margin-right: 12px;
+  padding-right: 12px;
   color: black;
+}
+
+.navbarCollapse{
+  /* backdrop-filter: blur(16em) saturate(180%);
+  -webkit-backdrop-filter: blur(16em) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding-left: 0.8em;
+  border-radius:0em 0em 0.40em 0.40em; */
+  /* width: 100vw; */
 }
