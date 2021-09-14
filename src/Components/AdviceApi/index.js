@@ -1,8 +1,8 @@
-import {useState,useEffect} from 'react'
+import {useState,} from 'react'
 import axios from "axios";
 //styles imp
 import Title from '../UI/TitleStyle'
-import {AdviceContainer,CardAdvice,CardAdviceTitleSection,CardAdviceContent,AdviceButton} from './AdviceApiStyle'
+import {AdviceContainer,CardAdviceTitleSection,CardAdviceContent,AdviceButton} from './AdviceApiStyle'
 
 const AdviceApi = () => {
     const [randomAdvice,setRandomAdvice] = useState('ready?')
