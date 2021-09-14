@@ -7,7 +7,7 @@ const containerMainStyle = styled.div`
   align-items: flex-start;
   /* background-color: aqua; */
   width: 100vw;
-  /* height:100vh; */
+  /* height:100vh;  */
   background-color: ${(props) => props.theme.background};
   padding-top: 60px;
   /* padding-bottom: 60px;  */

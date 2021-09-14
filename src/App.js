@@ -1,5 +1,6 @@
 import AboutMe from './Components/AboutMe';
 import Resume from './Components/resume';
+import AdviceApi from './Components/AdviceApi';
 import Portefolio from './Components/portefolio';
 import Header from './Components/Header/Header';
 import ThemeToggle from './Components/ThemeToggle'
@@ -19,7 +20,7 @@ function App() {
     <Theme>
     <ContainerMain>
     {/* <Container className='containerMain'> */}
-      <Grid container={true} spacing={1}>
+      <Grid container={true} spacing={3}>
         <Grid item xs={12} sm={12} md={4} lg={3}>
         <ThemeToggle/>
           <Flip>
@@ -33,13 +34,13 @@ function App() {
             <Header />
 
             <Switch>
-
               <Route path='/' exact component={LandingPage}/>
 
               <Route path='/portefolio' component={Portefolio}/>
 
               <Route path='/resume' component={Resume}/>
 
+              <Route path='/AdviceApi' component={AdviceApi}/>
             </Switch>
             
           </Router>

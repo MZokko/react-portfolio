@@ -48,7 +48,7 @@ function Header(props) {
 
           {/* drop down to API play ground nav */}
           <NavDropdown title='Api'>
-            <NavDropdown.Item href=''>Github</NavDropdown.Item>
+            <NavDropdown.Item href='/AdviceApi'>Advices</NavDropdown.Item>
           </NavDropdown>
 
         </Nav>
