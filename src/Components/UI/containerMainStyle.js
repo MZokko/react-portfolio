@@ -9,7 +9,7 @@ const containerMainStyle = styled.div`
   width: 100vw;
   /* height:100vh;  */
   background-color: ${(props) => props.theme.background};
-  padding-top: 60px;
+  /* padding-top: 60px; */
   /* padding-bottom: 60px;  */
 
   @media only screen and (max-width: 800px){
