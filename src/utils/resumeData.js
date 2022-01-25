@@ -31,9 +31,14 @@ export const data ={
 
   professionalExperience: [
     {
+      title: 'Labour agency : Labor Revolution',
+      date: '2021-2022',
+      description: 'construction worker',
+    },
+    {
       title: 'Labour agency : Greenstaff',
       date: '2016-2020',
-      description: 'LandscaperatGreenstaff(Laboureragency)',
+      description: 'Landscaper at Greenstaff(Laboureragency)',
     },
     {
       title: 'Working Holiday – Australia',
