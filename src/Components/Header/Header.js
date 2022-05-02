@@ -16,7 +16,7 @@ function Header(props) {
   return (
     <Navbar
       collapseOnSelect
-      expand='lg'
+      expand='false'
       sticky='top'
       className='navbarContainer'
     >
