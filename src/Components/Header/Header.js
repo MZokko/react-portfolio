@@ -16,7 +16,7 @@ function Header(props) {
   return (
     <Navbar
       collapseOnSelect
-      expand='bg'
+      expand='lg'
       sticky='top'
       className='navbarContainer'
     >
@@ -29,7 +29,7 @@ function Header(props) {
 
       <Navbar.Toggle />
 
-      <Navbar.Collapse collapseOnSelect expand='lg' className='navbarCollapse'>
+      <Navbar.Collapse collapseOnSelect className='navbarCollapse'>
         <Container>
           {/* resume nav */}
           <Nav className='headerLeft'>
